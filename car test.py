@@ -367,7 +367,7 @@ def game_loop():
             score=passed*10
             if int(passed)%10==0:
                 level=level+1
-                obstacle_speed+2
+                obstacle_speed+=2
                 largetext=pygame.font.Font("freesansbold.ttf",80)
                 textsurf,textrect=text_objects("LEVEL"+str(level),largetext)
                 textrect.center=((display_width/2),(display_height/2))
